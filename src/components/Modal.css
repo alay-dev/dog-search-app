@@ -1,0 +1,115 @@
+.background {
+    position: fixed ;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: black;
+    opacity: 0.8 ;
+    width: 100% ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    position: fixed;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    width: 70rem ;
+    height: max-content ;
+    background-color: #fff ;
+    padding: 4rem ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px ;
+    background-image: linear-gradient(to right bottom , #D9EBF1, #fff);
+}
+
+@media only screen and (max-width:600px) {
+    .content {
+        width: 40rem ;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .content {
+        width: 35rem ;
+        padding: 2rem ;
+    }
+}
+
+@media only screen and (max-width:330px) {
+    .content {
+        width: 30rem ;
+    }
+}
+
+.content img {
+    width: 30rem ;
+    height: 35rem ;
+    object-fit: contain;
+    border-radius: 10px ;
+    border: 2px solid #fff;
+}
+
+@media only screen and (max-width:420px) {
+    .content img {
+        width: 26rem ;
+        height: 26rem ;
+        margin: auto;
+    }
+}
+
+.dog__info {
+    width: 30rem ;
+}
+
+@media only screen and (max-width:600px) {
+    .dog__info {
+        margin-top: 2rem ;
+        width: 100% ;
+
+    }
+}
+
+.dog__info h2 {
+    font-size: 2.2rem ;
+    margin-bottom: 3rem ;
+    background-image: linear-gradient(to right bottom, #845EC2, #FF6F91) ;
+    transform: skew(-20deg);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 2rem ;
+    box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.55);
+}
+
+@media only screen and (max-width:420px) {
+    .dog__info h2 {
+        font-size: 1.8rem ;
+        padding: 0.5rem 1rem ;
+    }
+}
+
+.dog__info .breed__grp {
+    font-size: 1.4rem ;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 2rem ;
+    background-color: #fff;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+.dog__info p {
+    font-size: 1.5rem ;
+    line-height: 1.6;
+}
+
+.dog__info p span {
+    font-weight: 600;
+}

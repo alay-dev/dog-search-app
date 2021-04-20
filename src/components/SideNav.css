@@ -1,0 +1,34 @@
+.sidenav {
+    width: 100% ;
+    height: 100vh;
+    position: fixed ;
+    top: 0 ;
+    left: 0 ;
+    z-index: 8;
+    background-color: #eee ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidenav nav {
+    list-style: none ;
+}
+
+.sidenav nav li {
+    font-size: 2.3rem ;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem ;
+    letter-spacing: 0.2rem ;
+    transition: all .2s ;
+    cursor: pointer ;
+}
+
+.sidenav nav li:hover {
+    background-color: #fafafa;
+}
+
+.sidenav nav li:not(:last-child) {
+    margin-bottom: 2rem ;
+}
